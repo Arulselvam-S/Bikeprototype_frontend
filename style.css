@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  position: relative;
+  width: 800px;
+}
+
+.bike-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.speed-display, .location-display {
+  position: absolute;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: rgba(0,0,0,0.5);
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+.speed-display {
+  top: 20px;
+  left: 20px;
+}
+
+.location-display {
+  top: 60px;
+  left: 20px;
+}
+
+button {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white;
+  border: 2px solid white;
+  border-radius: 8px;
+  font-size: 18px;
+  padding: 8px 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#accelerate-btn {
+  bottom: 100px;
+  right: 220px;
+}
+
+#brake-btn {
+  bottom: 100px;
+  left: 220px;
+}
+
+#crash-btn {
+  top: 20px;
+  right: 140px;
+}
+
+#reset-btn {
+  top: 20px;
+  right: 40px;
+}
